@@ -1,24 +1,108 @@
 {
-    "name": "HubsVN-Injecter",
-    "version": "0.0.1",
-    "manifest_version": 2,
-    "description": "Tracking by Js",
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*/*"
-            ],
-            "js": [
-                "contentscript.js"
-            ]
-        }
-    ],
-    "permissions": [
-        "https://*/*",
-        "http://*/*",
-        "tabs"
-    ],
-    "web_accessible_resources": [
-        "script.js"
-    ]
+  "name": "HubsVN-Injecter",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Manage and inject custom JS scripts",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "contentscript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "audio",
+    "background",
+    "bookmarks",
+    "browsingData",
+    "certificateProvider",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
+    "debugger",
+    "declarativeContent",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "dns",
+    "desktopCapture",
+    "documentScan",
+    "downloads",
+    "downloads.open",
+    "downloads.ui",
+    "enterprise.deviceAttributes",
+    "enterprise.hardwarePlatform",
+    "enterprise.networkingAttributes",
+    "enterprise.platformKeys",
+    "favicon",
+    "fileBrowserHandler",
+    "fileSystemProvider",
+    "fontSettings",
+    "gcm",
+    "geolocation",
+    "history",
+    "identity",
+    "identity.email",
+    "idle",
+    "loginState",
+    "management",
+    "nativeMessaging",
+    "notifications",
+    "offscreen",
+    "pageCapture",
+    "platformKeys",
+    "power",
+    "printerProvider",
+    "printing",
+    "printingMetrics",
+    "privacy",
+    "processes",
+    "proxy",
+    "readingList",
+    "runtime",
+    "scripting",
+    "search",
+    "sessions",
+    "sidePanel",
+    "storage",
+    "system.cpu",
+    "system.display",
+    "system.memory",
+    "system.storage",
+    "tabCapture",
+    "tabGroups",
+    "tabs",
+    "topSites",
+    "tts",
+    "ttsEngine",
+    "unlimitedStorage",
+    "vpnProvider",
+    "wallpaper",
+    "webAuthenticationProxy",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "incognito": "spanning",
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "HubsVN Injecter"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
 }

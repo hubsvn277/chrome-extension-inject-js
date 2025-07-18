@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubsVN Script Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      width: 600px;
+    }
+
+    textarea {
+      width: 100%;
+      margin: 5px 0;
+      padding: 5px;
+      font-family: monospace;
+      height: 80px;
+    }
+
+    .script-item {
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button.delete-button {
+      background-color: #dc3545;
+    }
+
+    button.delete-button:hover {
+      background-color: #a71d2a;
+    }
+
+    #add-script {
+      margin-top: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h3>HubsVN Script Manager</h3>
+  <textarea id="script-input" placeholder="Enter JavaScript code here..."></textarea>
+  <button id="add-script">Add Script</button>
+  <div id="script-list"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
